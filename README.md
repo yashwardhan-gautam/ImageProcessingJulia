@@ -1,2 +1,3 @@
-# ImageProcessingJulia
-Working on Images with Julia
+# Seam Carving 
+This repository contains the code for implemntation of the Paper on [Image Resizing by Seam Carving](http://www.cs.cmu.edu/afs/andrew/scs/cs/15-463/f07/proj2/www/wwedler/#:~:text=Seam%20carving%20allows%20a%20change,image%20and%20removing%20those%20paths.). 
+The algorithm is capable of killing the deadspace inside the picture on shrinking it and without changing the objects inside the picture actually. The jist behind the algorithm is to detect the edges  and remove a path (the path is one pixel wide) from top of the image to bottom, the removed pixels are the one which have similar surroudings. So, that deletion of those pixels is unnoticed to human eye.
