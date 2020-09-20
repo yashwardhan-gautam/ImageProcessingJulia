@@ -7,6 +7,7 @@ On the left is the original image, and on the right is the same image when compr
 # The fancy part -  *Dynamic Programming*
 All that is to be done is to find the energy of lowest seam every time and delete it consecutively. For this every pixel is to be assigned with some energy, what do I mean when I say energy of a pixel is the squared difference between the R,G,B components of the adjacent pixels in X and Y axis, the energy e(x,y) is 
 ![](images/energies1.png)
+There are various methods of defining energy of a pixel the one I'm using in code is not this one but using Sobel kernel (I found it to be better performing).
 The edge cases of finding the energy will be when we actually are at a pixel which is on the edge.In that case we don't consider the pixel which falls of the dimensions of the picture.
 Now, to calculate the Seam path, we look up at the pixels in the above row we can connect with
 ![](images/dp1.png)
